@@ -103,4 +103,4 @@ Aren't comfortable using CLI tools? Use my <a href="https://apkbucket.net/apk-do
 ### Credits:
 `gplaydl` makes use of the following packages:
 
-* [NoMore201/googleplay-api](https://github.com/NoMore201/googleplay-api/)
+* [Backryun/googleplay-api](https://github.com/backryun/googleplay-api2/)
