@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from gpapidl.googleplay import GooglePlayAPI
+from gpapi.googleplay import GooglePlayAPI
 import os
 import sys
 import argparse
@@ -10,7 +10,7 @@ import validators
 from termcolor import colored
 from getpass import getpass
 
-devicecode = 'shamu'
+devicecode = 'angler'
 
 ap = argparse.ArgumentParser(
     description='Command line APK downloader for Google Play Store.')
