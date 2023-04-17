@@ -7,7 +7,7 @@ Download APK, split APKs, and expansion (OBB) files from Google Play Store to yo
 ## Brief Instructions
 ```bash
 # Install the package
-pip3 install --upgrade --force-reinstall gplaydl==1.3.5
+pip3 install --upgrade --force-reinstall gplaydl==1.4.0
 
 # Configure auth
 gplaydl configure
@@ -20,7 +20,7 @@ gplaydl download --packageId com.twitter.android
 So the brief instructions didn't get you going? Here is a detailed guide for you. Let's begin with installing the package using PIP3.
 
 ```bash
-pip3 install --upgrade --force-reinstall gplaydl==1.3.5
+pip3 install --upgrade --force-reinstall gplaydl==1.4.0
 ```
 
 If `gplaydl` is already installed on your system, it will be upgraded to the latest version as we are forcing PIP to install from the latest release.
@@ -28,7 +28,7 @@ If `gplaydl` is already installed on your system, it will be upgraded to the lat
 or
 
 ```bash
-git clone https://github.com/rehmatworks/gplaydl.git && \
+git clone https://github.com/backryun/gplaydl2.git && \
 cd gplaydl && \
 python3 setup.py install
 ```
@@ -47,19 +47,19 @@ You will be asked to provide the login info. Provided the following details:
 * Password: Your Google account's password (An app password is recommended)
 
 ## Downloading Apps
-Download Twitter using the default device **Nexus 6 (api27) [shamu]** and store the APK in the current directory:
+Download Twitter using the default device **Nexus 6P (api27) [angler]** and store the APK in the current directory:
 
 ```bash
 gplaydl download --packageId com.twitter.android
 ```
 
-Download Twitter using the default device **Nexus 6 (api27) [shamu]** and store the APK in a custom path (i.e. ./apk-downloads/):
+Download Twitter using the default device **Nexus 6P (api27) [angler]** and store the APK in a custom path (i.e. ./apk-downloads/):
 
 ```bash
 gplaydl download --packageId com.twitter.android --path ./apk-downloads/
 ```
 
-Download Twitter using another device, i.e. `angler` ([Available Devices](https://github.com/NoMore201/googleplay-api/blob/master/gpapi/device.properties))
+Download Twitter using another device, i.e. `angler` ([Available Devices](https://github.com/backryun/googleplay-api2/blob/master/gpapi/device.properties))
 
 ```bash
 gplaydl download --packageId com.twitter.android --device angler
@@ -96,9 +96,6 @@ gplaydl configure
 * No need to provide device ID (Generated automatically)
 * No need to provide auth token (Generated automatically)
 * Re-uses auth token and refreshes it if expired
-
-## Web-based APK Downloader
-Aren't comfortable using CLI tools? Use my <a href="https://apkbucket.net/apk-downloader/">web-based APK downloader here</a>.
 
 ### Credits:
 `gplaydl` makes use of the following packages:

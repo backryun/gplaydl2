@@ -73,7 +73,7 @@ def configureauth():
     if not os.path.exists(CONFIGDIR):
         os.makedirs(CONFIGDIR, exist_ok=True)
 
-    server = GooglePlayAPI('en_US', 'America/New York', devicecode)
+    server = GooglePlayAPI('ko_KR', 'Asia/Seoul', devicecode)
     try:
         server.login(email, password)
         server.details('com.whatsapp')
@@ -102,7 +102,7 @@ def downloadapp(packageId):
         configureauth()
         sys.exit(0)
 
-    server = GooglePlayAPI('en_US', 'America/New York', args.device)
+    server = GooglePlayAPI('ko_KR', 'Asia/Seoul', args.device)
     try:
         server = do_login(server, email, password)
     except Exception as e:
