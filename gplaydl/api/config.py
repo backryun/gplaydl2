@@ -25,15 +25,29 @@ class DeviceBuilder(object):
         """Get device properties from the device.properties file"""
         device = {}
         path = os.path.join(os.path.dirname(__file__), 'device.properties')
-        with open(path, 'r') as f:
+        current_section = None
+        
+        with open(path, 'r', encoding='utf-8') as f:
             for line in f:
-                if line.startswith(device_codename + "="):
-                    device_string = line.split('=', 1)[1].strip()
-                    device_properties = device_string.split(',')
-                    for prop in device_properties:
-                        key, value = prop.split('=')
-                        device[key] = value
+                line = line.strip()
+                if not line or line.startswith('#'):
+                    continue
+                    
+                # Check for section header [device_name]
+                if line.startswith('[') and line.endswith(']'):
+                    current_section = line[1:-1]
+                    if current_section == device_codename:
+                        continue
+                
+                # Parse properties in the matching section
+                if current_section == device_codename and '=' in line:
+                    key, value = line.split('=', 1)
+                    device[key.strip()] = value.strip()
+                
+                # Stop when we reach another section after finding our device
+                elif current_section == device_codename and line.startswith('['):
                     break
+                    
         if not device:
             raise ValueError("Device codename not found: " + device_codename)
         return device

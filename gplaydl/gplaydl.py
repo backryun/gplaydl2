@@ -10,7 +10,7 @@ import validators
 from termcolor import colored
 from getpass import getpass
 
-devicecode = 'angler'
+devicecode = 'hero2lte'
 
 ap = argparse.ArgumentParser(
     description='Command line APK downloader for Google Play Store.')

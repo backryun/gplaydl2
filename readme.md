@@ -1,3 +1,5 @@
+# Curruntly not working, Google Authcation has big changed. Need lots of Time to update it. Don`t user it now.
+
 # Command Line APK Downloader
 Download APK, split APKs, and expansion (OBB) files from Google Play Store to your PC or server directly with minimum effort.
 
