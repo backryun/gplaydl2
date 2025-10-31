@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from .gpapi.googleplay import GooglePlayAPI
+from .api.googleplay import GooglePlayAPI
 import os
 import sys
 import argparse

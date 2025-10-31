@@ -6,7 +6,7 @@ setup(name='gplaydl',
 	author="Backryun",
 	author_email="bakryun0718@gmail.com",
 	url="https://github.com/backryun/gplaydl2",
-	python_requires='>3.14.0',
+	python_requires='>=3.14.0',
 	license="GPLv3",
 	entry_points={
 		'console_scripts': [
@@ -14,8 +14,12 @@ setup(name='gplaydl',
 		],
 	},
 	packages=[
-		'gplaydl'
+		'gplaydl',
+		'gplaydl.api'
 	],
+	package_data={
+		'gplaydl.api': ['device.properties']
+	},
 	install_requires=[
 		'certifi==2025.10.5',
 		'cffi==2.0.0',
