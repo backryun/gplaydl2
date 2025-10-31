@@ -32,7 +32,7 @@ git clone https://github.com/backryun/gplaydl2.git && \
 cd gplaydl && \
 python3 setup.py install
 ```
-**Attention:** Only Python 3.2.x and up is supported. Please use PIP3, not PIP (if PIP is aliased to Python 2.x PIP)
+**Attention:** Only Python 3.14 and up is supported.
 
 ## Configuration
 Soon after the package is installed, type the following and hit enter:
@@ -100,4 +100,4 @@ gplaydl configure
 ### Credits:
 `gplaydl` makes use of the following packages:
 
-* [Backryun/googleplay-api](https://github.com/backryun/googleplay-api2/)
+* [NoMore201/googleplay-api](https://github.com/NoMore201/googleplay-api)

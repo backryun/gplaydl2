@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from gpapi.googleplay import GooglePlayAPI
+from .gpapi.googleplay import GooglePlayAPI
 import os
 import sys
 import argparse
@@ -216,8 +216,8 @@ def do_login(server, email, password):
 
 
 def main():
-    if sys.version_info < (3, 2):
-        print(colored('Only Python 3.2.x & up is supported. Please uninstall gplaydl and re-install under Python 3.2.x or up.', 'yellow'))
+    if sys.version_info < (3, 14):
+        print(colored('Only Python 3.14.x & up is supported. Please uninstall gplaydl and re-install under Python 3.14.x or up.', 'yellow'))
         sys.exit(1)
 
     if args.action == 'configure':

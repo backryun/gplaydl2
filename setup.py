@@ -6,8 +6,8 @@ setup(name='gplaydl',
 	author="Backryun",
 	author_email="bakryun0718@gmail.com",
 	url="https://github.com/backryun/gplaydl2",
-	python_requires='>3.2.0',
-	license="MIT",
+	python_requires='>3.14.0',
+	license="GPLv3",
 	entry_points={
 		'console_scripts': [
 			'gplaydl = gplaydl.gplaydl:main'
@@ -17,19 +17,18 @@ setup(name='gplaydl',
 		'gplaydl'
 	],
 	install_requires=[
-		'certifi==2022.12.7',
-		'cffi==1.15.1',
-		'chardet==5.1.0',
-		'cryptography==3.4.8',
-		'decorator==4.4.2',
-		'gpapi==1.0.0',
-		'idna==2.10',
-		'protobuf==3.20.3',
-		'pycparser==2.21',
-		'requests==2.28.2',
-		'six==1.14.0',
-		'termcolor==1.1.0',
-		'urllib3==1.25.11',
-		'validators==0.14.3'
+		'certifi==2025.10.5',
+		'cffi==2.0.0',
+		'chardet==5.2.0',
+		'cryptography==46.0.3',
+		'decorator==5.2.1',
+		'idna==3.11',
+		'protobuf==6.33.0',
+		'pycparser==2.23',
+		'requests==2.32.5',
+		'six==1.17.0',
+		'termcolor==3.2.0',
+		'urllib3==2.5.0',
+		'validators==0.35.0'
 	]
 )
