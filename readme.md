@@ -1,32 +1,7 @@
 # Command Line APK Downloader
 Download APK, split APKs, and expansion (OBB) files from Google Play Store to your PC or server directly with minimum effort.
 
-### Video Guide
-[https://www.youtube.com/watch?v=dy6rPpaxj3Q&feature=youtu.be](https://www.youtube.com/watch?v=dy6rPpaxj3Q&feature=youtu.be)
-
 ## Brief Instructions
-```bash
-# Install the package
-pip3 install --upgrade --force-reinstall gplaydl==1.4.0
-
-# Configure auth
-gplaydl configure
-
-# Let's try downloading an app
-gplaydl download --packageId com.twitter.android
-```
-
-## Detailed Instructions
-So the brief instructions didn't get you going? Here is a detailed guide for you. Let's begin with installing the package using PIP3.
-
-```bash
-pip3 install --upgrade --force-reinstall gplaydl==1.4.0
-```
-
-If `gplaydl` is already installed on your system, it will be upgraded to the latest version as we are forcing PIP to install from the latest release.
-
-or
-
 ```bash
 git clone https://github.com/backryun/gplaydl2.git && \
 cd gplaydl && \
@@ -44,7 +19,7 @@ gplaydl configure
 You will be asked to provide the login info. Provided the following details:
 
 * Email: Your Google account's email address
-* Password: Your Google account's password (An app password is recommended)
+* Password: Your Google account's "app password"
 
 ## Downloading Apps
 Download Twitter using the default device **Nexus 6P (api27) [angler]** and store the APK in the current directory:
@@ -59,7 +34,7 @@ Download Twitter using the default device **Nexus 6P (api27) [angler]** and stor
 gplaydl download --packageId com.twitter.android --path ./apk-downloads/
 ```
 
-Download Twitter using another device, i.e. `angler` ([Available Devices](https://github.com/backryun/googleplay-api2/blob/master/gpapi/device.properties))
+Download Twitter using another device, i.e. `angler` ([Available Devices](https://github.com/backryun/gplaydl2/blob/master/gplaydl/api/device.properties))
 
 ```bash
 gplaydl download --packageId com.twitter.android --device angler
